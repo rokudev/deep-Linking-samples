@@ -28,11 +28,11 @@ To run this sample, follow these steps:
 
 5.  Run the following cURL commands to test deep linking into the video content items n your development channel via ECP POST requests:
 
-  - Deep linking upon channel launch:  curl -d &#39;&#39; &#39;http:// ://\&lt;Roku Device IP Address\&gt;:8060/launch/dev?        contentID=2c4e8ea1ad2f4a8d9d244f5dd4cc47b6&amp;mediaType=movie&#39;
+  - Deep linking upon channel launch:  curl -d &#39;&#39; &#39;http://\<Roku Device IP Address\>:8060/launch/dev?        contentID=2c4e8ea1ad2f4a8d9d244f5dd4cc47b6&amp;mediaType=movie&#39;
 
-  - Deep linking while channel is running: curl -d &#39;&#39; &#39;http://\&lt;Roku Device IP Address\&gt;:8060/input/dev?    contentID=2c4e8ea1ad2f4a8d9d244f5dd4cc47b6&amp;mediaType=movie&#39;
+  - Deep linking while channel is running: curl -d &#39;&#39; &#39;http://\<Roku Device IP Address\>:8060/input/dev?    contentID=2c4e8ea1ad2f4a8d9d244f5dd4cc47b6&amp;mediaType=movie&#39;
   
-    When testing deep links on your production channel, replace &quot;dev&quot; with your channel ID. The syntax to use is    therefore: curl -d &#39;&#39; &#39;http://\&lt;Roku Device IP Address\&gt;:8060/\&lt;command\&gt;/\&lt;channelId\&gt;?c  ontentID=\&lt;contentIDValue\&gt;&amp;mediaType==\&lt;movieTypeValue\&gt;
+    When testing deep links on your production channel, replace &quot;dev&quot; with your channel ID. The syntax to use is    therefore: curl -d &#39;&#39; &#39;http://\<Roku Device IP Address\>:8060/\<channelId\>?contentID=\<contentIdValue\>&amp;mediaType=\<movieTypeValue>&#39;
 
 6.  You can go to the [feed URL](http://api.delvenetworks.com/rest/organizations/59021fabe3b645968e382ac726cd6c7b/channels/1cfd09ab38e54f48be8498e0249f5c83/media.rss) used in this sample to view the content IDs that you can pass into the ECP commands.  Alternatively, you can launch the sample channel and use the developer console to view a list of the content IDs. For convenience, a few of the content IDs are provided:
   
