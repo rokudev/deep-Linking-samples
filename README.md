@@ -30,7 +30,7 @@ To run this sample, follow these steps:
 
   - Deep linking upon channel launch:  curl -d &#39;&#39; &#39;http://\<Roku Device IP Address\>:8060/launch/dev?        contentID=2c4e8ea1ad2f4a8d9d244f5dd4cc47b6&amp;mediaType=movie&#39;
 
-  - Deep linking while channel is running: curl -d &#39;&#39; &#39;http://\<Roku Device IP Address\>:8060/input/dev?    contentID=2c4e8ea1ad2f4a8d9d244f5dd4cc47b6&amp;mediaType=movie&#39;
+  - Deep linking while channel is running: curl -d &#39;&#39; &#39;http://\<Roku Device IP Address\>:8060/input?    contentID=2c4e8ea1ad2f4a8d9d244f5dd4cc47b6&amp;mediaType=movie&#39;
   
     When testing deep links on your production channel, replace &quot;dev&quot; with your channel ID. The syntax to use is    therefore: curl -d &#39;&#39; &#39;http://\<Roku Device IP Address\>:8060/\<channelId\>?contentID=\<contentIdValue\>&amp;mediaType=\<mediaTypeValue>&#39;
 
