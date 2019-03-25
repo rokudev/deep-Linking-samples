@@ -6,7 +6,7 @@ This sample demonstrates how to launch content with deep links. It provides vide
 
 ### **Components**
 
-The **FeedParser** component retrieves the video content items used in this sample from an XML feed and then indexes and transforms them into ContentNodes so they can be displayed in forBrightScript components to display the content. This process is useful if you do not have a web service for pulling content IDs from your feed (for example, your feed is maintained in an Amazon S3 bucket).
+The **FeedParser** component retrieves the video content items used in this sample from an XML feed and then indexes and transforms them into ContentNodes so they can be displayed in BrightScript components. This process is useful if you do not have a web service for pulling content IDs from your feed (for example, your feed is maintained in an Amazon S3 bucket).
 
 Specifically, the **FeedParser** component stores the stream URLs and other meta data for each content item in the feed in an array of associative arrays. The captured meta data includes a thumbnail image (used for the channel&#39;s poster and background images), description, and title. Importantly, it stores the items&#39; GUIDs as content IDs and links them to the metadata. This enables you to pass the GUIDs in ECP cURL commands and deep link into the associated content.To display the content items on the screen, it formats the items into ContentNodes and then populates them in a RowItem.
 
