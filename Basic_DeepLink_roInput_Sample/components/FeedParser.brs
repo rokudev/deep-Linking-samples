@@ -12,7 +12,8 @@ End Function
 
 Function GetContentFeed()  'This function retrieves and parses the feed and stores the content item in a ContentNode
     url = CreateObject("roUrlTransfer")  'component used to transfer data to/from remote servers
-    url.SetUrl("http://api.delvenetworks.com/rest/organizations/59021fabe3b645968e382ac726cd6c7b/channels/1cfd09ab38e54f48be8498e0249f5c83/media.rss")
+    url.SetUrl("https://devtools.web.roku.com/samples/sample_content.rss")
+    url.SetCertificatesFile("common:/certs/ca-bundle.crt")
     rsp = url.GetToString()  'convert response into a string
 
     responseXML = ParseXML(rsp)  'Roku includes its own XML parsing method
